@@ -1,4 +1,5 @@
-CREATE TABLE IF NOT EXISTS `ak47_cookies` (
+DROP TABLE IF EXISTS `ak47_cookies`; 
+CREATE TABLE `ak47_cookies` (
   `id` int(11) NOT NULL,
   `pos` varchar(255) NOT NULL DEFAULT '',
   `stage` int(11) NOT NULL DEFAULT 0,
@@ -9,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `ak47_cookies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 DELETE FROM `ak47_cookies`;
-
 INSERT INTO `ak47_cookies` (`id`, `pos`, `stage`, `growing`, `time`, `fertilizer`, `spray`) VALUES
 	(1, '{"x":-929.6370239257813,"y":-1195.1181640625,"z":-1.82236528396606}', 0, 0, 0, 0, 0),
 	(2, '{"x":-933.28857421875,"y":-1191.5411376953126,"z":-1.76762628555297}', 0, 0, 0, 0, 0),
@@ -81,7 +81,8 @@ INSERT INTO `ak47_cookies` (`id`, `pos`, `stage`, `growing`, `time`, `fertilizer
 	(68, '{"x":-927.892578125,"y":-1199.351318359375,"z":-1.82235717773437}', 0, 0, 0, 0, 0);
 
 
-CREATE TABLE IF NOT EXISTS `ak47_cookies_shop_items` (
+DROP TABLE IF EXISTS `ak47_cookies_shop_items`; 
+CREATE TABLE `ak47_cookies_shop_items` (
   `name` varchar(50) NOT NULL,
   `label` varchar(50) DEFAULT NULL,
   `price` varchar(50) DEFAULT NULL,
