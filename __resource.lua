@@ -1,6 +1,9 @@
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
-description 'MenanAk47 - Optimized Cookies'
-version '1.0'
+name "ak47_cookies"
+description "Cookies Job And Farming"
+author "MenanAk47 (MenanAk47#3129)"
+version "1.0"
+
 ui_page('html/index.html') 
 
 files({
