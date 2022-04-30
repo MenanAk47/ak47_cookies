@@ -25,6 +25,10 @@ AddEventHandler('ak47_cookies:openbossaction', function()
         menu.close()
         inBossMenu = false
     end)
+    TriggerEvent('society:openBossMenu', 'cookies', function(data, menu)
+        menu.close()
+        inBossMenu = false
+    end)
 end)
 
 RegisterNetEvent('ak47_cookies:notify')
